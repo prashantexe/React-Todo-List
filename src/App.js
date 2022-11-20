@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./MyCompoents/Header";
+import Todos from "./MyCompoents/Todos";
+import Footer from "./MyCompoents/Footer";
+
 
 function App() {
+  let myVariable = 446; 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>{54+45}</div>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="My ToDo's List" searchbar={"false"}/>
+      <Todos/>
+      <Footer/>
+
+
+    </>
   );
 }
 
